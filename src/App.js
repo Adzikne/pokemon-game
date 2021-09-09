@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/header";
+import Layout from "./components/Layout/layout";
+import Footer from "./components/Footer/footer";
+import Image from "./components/Layout/bg1.jpg";
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header 
+      title="This is new title"
+      descr="This is new description!"
+    />
+    <Layout 
+      title="This is new title"
+      descr="This is new description!"
+      urlBg={urlBg}
+    />
+    <Layout 
+      title="This is new title"
+      descr="This is new description!"
+      colorBg={colorBg}
+    />
+    <Layout 
+      title="This is new title"
+      descr="This is new description!"
+      urlBg={urlBg}
+    />
+    <Footer />
+  </>
   );
 }
 
