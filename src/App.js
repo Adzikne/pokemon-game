@@ -1,8 +1,9 @@
 import Header from "./components/Header/header";
 import Layout from "./components/Layout/layout";
 import Footer from "./components/Footer/footer";
-import Image from "./components/Layout/bg1.jpg";
-import './index.css';
+import Bg1 from "./components/Layout/bg1.jpg";
+import Bg2 from "./components/Layout/bg3.jpg";
+import "./index.css";
 
 const App = () => {
   return (
@@ -14,17 +15,17 @@ const App = () => {
     <Layout 
       title="This is new title"
       descr="This is new description!"
-      urlBg={urlBg}
+      urlBg={Bg1}
     />
     <Layout 
       title="This is new title"
       descr="This is new description!"
-      colorBg={colorBg}
+      colorBg="red"
     />
     <Layout 
       title="This is new title"
       descr="This is new description!"
-      urlBg={urlBg}
+      urlBg={Bg2}
     />
     <Footer />
   </>
