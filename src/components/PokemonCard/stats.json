@@ -1,14 +1,4 @@
-import Header from "./components/Header/header";
-import Layout from "./components/Layout/layout";
-import Layout2 from "./components/Layout/layout";
-import Footer from "./components/Footer/footer";
-import Bg1 from "./components/Layout/bg1.jpg";
-import Bg2 from "./components/Layout/bg3.jpg";
-import "./index.css";
-import PokemonCard from "./components/PokemonCard";
-import a from "./App.css"
-
-const POKEMONS = [
+[
     {
       "abilities": [
         "keen-eye",
@@ -141,40 +131,4 @@ const POKEMONS = [
         "left": 4
       }
     }
-];
-
-const App = () => {
-  return (
-    <>
-    <Header 
-      title="This is new title"
-      descr="This is new description!"
-    />
-    <Layout 
-      title="This is new title"
-      descr="This is new description!"
-      urlBg={Bg1}
-    />
-    <Layout 
-      title="This is new title"
-      descr="This is new description!"
-      colorBg="red"
-      >
-        <div className="flex">
-          {POKEMONS.map ( item => 
-            <PokemonCard key={item.id} id={item.id} name={item.name} type={item.type} img={item.img} values={item.values} />)
-          }
-        </div>
-    </Layout>
-    <Layout2 />
-    <Layout 
-      title="This is new title"
-      descr="This is new description!"
-      urlBg={Bg2}
-    />
-    <Footer />
-  </>
-  );
-};
-
-export default App;
+  ]
