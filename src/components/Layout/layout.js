@@ -1,6 +1,6 @@
 import l from './style.module.css';
 
-const Layout = ({title, descr, urlBg, colorBg = "red"}) => {
+const Layout = ({children, title, descr, urlBg, colorBg = "red"}) => {
 
     const sbg = { backgroundImage: urlBg && `url("${urlBg}")`, backgroundColor: colorBg };
 
@@ -17,8 +17,10 @@ const Layout = ({title, descr, urlBg, colorBg = "red"}) => {
                         </div>
                     </article>
                 </div>
+                <div>{children}</div>
             </section> 
     )
 }
+
 
 export default Layout;
